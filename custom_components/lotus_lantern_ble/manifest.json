@@ -7,5 +7,5 @@
   "dependencies": [],
   "codeowners": ["@saharki"],
   "config_flow": true,
-  "homeassistant": ">=2022.0.0"
+  "homeassistant": "2022.0.0"
 }
