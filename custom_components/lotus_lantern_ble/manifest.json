@@ -2,9 +2,9 @@
   "domain": "lotus_lantern_ble",
   "name": "Lotus Lantern BLE",
   "version": "0.1.0",
-  "documentation": "https://github.com/yourusername/lotus_lantern_ble",
+  "documentation": "https://github.com/saharki/lotus-lantern-HACS",
   "requirements": ["bleak==0.20.2"],
   "dependencies": [],
-  "codeowners": ["@yourusername"],
+  "codeowners": ["@saharki"],
   "config_flow": true
 }
