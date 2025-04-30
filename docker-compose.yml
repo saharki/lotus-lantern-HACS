@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  lotus-led:
+    image: lotus-led-controller
+    container_name: lotus-led-controller
+    privileged: true
+    network_mode: host
+    volumes:
+      - /dev:/dev # Access to Bluetooth hardware
+      - /var/run/dbus:/var/run/dbus:ro
+    environment:
+      - TZ=Asia/Jerusalem
+    command: sleep infinity # Keeps the container running; override to run script directly

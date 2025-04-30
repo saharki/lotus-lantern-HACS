@@ -1,0 +1,15 @@
+{
+  "name": "Python BLE Dev",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "mounts": ["source=/dev,target=/dev,type=bind"],
+  "capAdd": ["NET_ADMIN", "SYS_ADMIN"],
+  "runArgs": ["--privileged"],
+  "postCreateCommand": "apt-get update && apt-get install -y bluez",
+  "workspaceFolder": "/workspace"
+}
