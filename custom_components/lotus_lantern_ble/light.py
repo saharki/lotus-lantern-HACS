@@ -36,21 +36,20 @@ async def async_setup_platform(hass, config, async_add_entities, discovery_info=
             char_uuid = device.get(CONF_CHAR_UUID)
             if address and char_uuid:
                 entities.append(LotusLanternBleLight(name, address, char_uuid))
-    else:
-        name = config.get(CONF_NAME, "Lotus Lantern BLE Light")
-        address = config.get(CONF_ADDRESS)
-        char_uuid = config.get(CONF_CHAR_UUID)
-        if address and char_uuid:
-            entities.append(LotusLanternBleLight(name, address, char_uuid))
     async_add_entities(entities)
 
 async def async_setup_entry(hass, entry: ConfigEntry, async_add_entities):
     # Setup from config flow (UI)
-    name = entry.data.get(CONF_NAME, "Lotus Lantern BLE Light")
-    address = entry.data.get(CONF_ADDRESS)
-    char_uuid = entry.data.get(CONF_CHAR_UUID)
-    if address and char_uuid:
-        async_add_entities([LotusLanternBleLight(name, address, char_uuid)])
+    devices = entry.data.get(CONF_DEVICES)
+    entities = []
+    if devices:
+        for device in devices:
+            name = device.get(CONF_NAME, "Lotus Lantern BLE Light")
+            address = device.get(CONF_ADDRESS)
+            char_uuid = device.get(CONF_CHAR_UUID)
+            if address and char_uuid:
+                entities.append(LotusLanternBleLight(name, address, char_uuid))
+    async_add_entities(entities)
 
 class LotusLanternBleLight(LightEntity):
     def __init__(self, name, address, char_uuid):
