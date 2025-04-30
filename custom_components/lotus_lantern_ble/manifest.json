@@ -1,0 +1,10 @@
+{
+  "domain": "lotus_lantern_ble",
+  "name": "Lotus Lantern BLE",
+  "version": "0.1.0",
+  "documentation": "https://github.com/yourusername/lotus_lantern_ble",
+  "requirements": ["bleak==0.20.2"],
+  "dependencies": [],
+  "codeowners": ["@yourusername"],
+  "config_flow": true
+}
