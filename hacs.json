@@ -4,5 +4,8 @@
   "zip_release": false,
   "render_readme": true,
   "homeassistant": "2023.11.0",
-  "hacs": "1.33.0"
+  "hacs": "1.33.0",
+  "icons": [
+    "https://github.com/saharki/lotus-lantern-HACS/blob/main/icons/icon.png"
+  ]
 }
