@@ -1,11 +1,14 @@
 {
   "domain": "lotus_lantern_ble",
   "name": "Lotus Lantern BLE",
-  "version": "0.1.0",
-  "documentation": "https://github.com/saharki/lotus-lantern-HACS",
-  "requirements": ["bleak==0.20.2"],
-  "dependencies": [],
+  "bluetooth": [{ "local_name": "Lotus Lantern BLE" }],
   "codeowners": ["@saharki"],
   "config_flow": true,
-  "min_homeassistant_version": "2022.0.0"
+  "dependencies": ["bluetooth"],
+  "documentation": "https://github.com/saharki/lotus-lantern-HACS",
+  "iot_class": "local_polling",
+  "issue_tracker": "https://github.com/saharki/lotus-lantern-HACS/issues",
+  "requirements": ["bleak-retry-connector>=1.17.1", "bleak>=0.17.0"],
+  "version": "0.0.1",
+  "integration_type": "device"
 }
