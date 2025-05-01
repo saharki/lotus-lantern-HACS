@@ -8,12 +8,12 @@
     { "local_name": "LEDBLE*" },
     { "local_name": "ELK-LAMPL*" }
   ],
-  "codeowners": ["@dave-code-ruiz"],
+  "codeowners": ["@saharki"],
   "config_flow": true,
   "dependencies": ["bluetooth"],
-  "documentation": "https://github.com/dave-code-ruiz/lotuslantern",
+  "documentation": "https://github.com/saharki/lotus-lantern-HACS",
   "iot_class": "local_polling",
-  "issue_tracker": "https://github.com/dave-code-ruiz/lotuslantern/issues",
+  "issue_tracker": "https://github.com/saharki/lotus-lantern-HACS/issues",
   "requirements": ["bleak-retry-connector>=3.5.0", "bleak>=0.22.2"],
   "version": "1.2.2"
 }
