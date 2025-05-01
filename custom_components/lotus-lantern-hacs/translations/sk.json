@@ -1,47 +1,47 @@
 {
-    "config": {
-        "step": {
-            "user": {
-                "data": {
-                    "mac": "Bluetooth MAC adresa",
-                    "name": "Názov"
-                },
-                "title": "Vyberte si svetlo Elkbledom. Skontrolujte, či je svetlo v dohľade na overenie."
-            },
-            "validate": {
-                "data": {
-                    "retry": "Znova skúsiť overiť pripojenie?",
-                    "flicker": "Blikalo svetlo?"
-                },
-                "title": "Overte pripojenie Elkbledom"
-            },
-            "manual": {
-                "data": {
-                    "mac": "Bluetooth MAC adresa",
-                    "name": "Názov"
-                },
-                "title": "Zadajte adresu MAC bluetooth"
-            }
+  "config": {
+    "step": {
+      "user": {
+        "data": {
+          "mac": "Bluetooth MAC adresa",
+          "name": "Názov"
         },
-        "error": {
-            "connect": "Nedá sa pripojiť k Elbledom"
-        },
-        "abort": {
-            "cannot_validate": "Nie je možné overiť Elkbledom light",
-            "cannot_connect": "Nedá sa pripojiť k Elbledom",
-            "not_supported": "Svetlo Elk Bledom nie je podporovane",
-            "invalid_discovery_info": "Neplatne informacie o objaveni v zariadeni bluetooth"
-        }
-    },
-    "options": {
-        "step": {
-          "user": {
-            "data": {
-              "reset": "Resetujte farbu po zapnutí LED",
-              "delay": "Oneskorenie odpojenia v sekundách(0 sa rovná nikdy sa neodpojí)"
-            }
-          }
-        }
+        "title": "Vyberte si svetlo Lotus Lantern HACS. Skontrolujte, či je svetlo v dohľade na overenie."
       },
-    "title": "Elkbledom"
+      "validate": {
+        "data": {
+          "retry": "Znova skúsiť overiť pripojenie?",
+          "flicker": "Blikalo svetlo?"
+        },
+        "title": "Overte pripojenie Lotus Lantern HACS"
+      },
+      "manual": {
+        "data": {
+          "mac": "Bluetooth MAC adresa",
+          "name": "Názov"
+        },
+        "title": "Zadajte adresu MAC bluetooth"
+      }
+    },
+    "error": {
+      "connect": "Nedá sa pripojiť k Lotus Lantern HACS"
+    },
+    "abort": {
+      "cannot_validate": "Nie je možné overiť Lotus Lantern HACS light",
+      "cannot_connect": "Nedá sa pripojiť k Lotus Lantern HACS",
+      "not_supported": "Svetlo Lotus Lantern HACS nie je podporovane",
+      "invalid_discovery_info": "Neplatne informacie o objaveni v zariadeni bluetooth"
+    }
+  },
+  "options": {
+    "step": {
+      "user": {
+        "data": {
+          "reset": "Resetujte farbu po zapnutí LED",
+          "delay": "Oneskorenie odpojenia v sekundách(0 sa rovná nikdy sa neodpojí)"
+        }
+      }
+    }
+  },
+  "title": "Lotus Lantern HACS"
 }

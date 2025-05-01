@@ -6,14 +6,14 @@
           "mac": "כתובת MAC של Bluetooth",
           "name": "שם"
         },
-        "title": "בחרו נורת Elkbledom. ודאו שהנורה בטווח ראייה לאימות."
+        "title": "בחרו נורת Lotus Lantern HACS. ודאו שהנורה בטווח ראייה לאימות."
       },
       "validate": {
         "data": {
           "retry": "לנסות לאמת את החיבור שוב?",
           "flicker": "האם הנורה הבהבה?"
         },
-        "title": "אמתו את החיבור לנורת Elkbledom"
+        "title": "אמתו את החיבור לנורת Lotus Lantern HACS"
       },
       "manual": {
         "data": {
@@ -24,12 +24,12 @@
       }
     },
     "error": {
-      "connect": "לא ניתן להתחבר לנורת Elkbledom"
+      "connect": "לא ניתן להתחבר לנורת Lotus Lantern HACS"
     },
     "abort": {
-      "cannot_validate": "לא ניתן לאמת את נורת Elkbledom",
-      "cannot_connect": "לא ניתן להתחבר לנורת Elkbledom",
-      "not_supported": "נורת Elkbledom אינה נתמכת",
+      "cannot_validate": "לא ניתן לאמת את נורת Lotus Lantern HACS",
+      "cannot_connect": "לא ניתן להתחבר לנורת Lotus Lantern HACS",
+      "not_supported": "נורת Lotus Lantern HACS אינה נתמכת",
       "invalid_discovery_info": "מידע גילוי לא תקין במכשיר Bluetooth"
     }
   },
@@ -43,5 +43,5 @@
       }
     }
   },
-  "title": "Elkbledom"
+  "title": "Lotus Lantern HACS"
 }

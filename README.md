@@ -99,7 +99,7 @@ You can manually clone this repository inside `config/custom_components/` HA fol
 
 ## Setup
 
-After installation, you should find elkbledom under the Settings -> Integrations -> Add integration -> search elkbledom integration -> follow instructions.
+After installation, you should find lotus lantern hacs under the Settings -> Integrations -> Add integration -> search lotus lantern hacs integration -> follow instructions.
 
 The setup step includes discovery which will list out all ELK BLEDOM lights discovered. The setup will validate connection by toggling the selected light. Make sure your light is in-sight to validate this.
 
@@ -107,7 +107,7 @@ The setup needs to be repeated for each light.
 
 ## Config
 
-After Setup, you can config two elkbledom params under Settings -> Integrations -> search elkbledom integration -> Config.
+After Setup, you can config two lotus lantern hacs params under Settings -> Integrations -> search lotus lantern hacs integration -> Config.
 
 #### Reset color when led turn on
 
@@ -149,7 +149,7 @@ In configuration.yaml:
 logger:
   default: info
   logs:
-    custom_components.elkbledom: debug
+    custom_components.lotus lantern hacs: debug
 ```
 
 ## Examples
@@ -229,4 +229,4 @@ https://github.com/kquinsland/JACKYLED-BLE-RGB-LED-Strip-controller
 
 https://linuxthings.co.uk/blog/control-an-elk-bledom-bluetooth-led-strip
 
-https://github.com/dave-code-ruiz/elkbledom/tree/main
+https://github.com/dave-code-ruiz/lotus lantern hacs/tree/main

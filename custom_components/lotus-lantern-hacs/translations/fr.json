@@ -1,47 +1,47 @@
 {
-    "config": {
-        "step": {
-            "user": {
-                "data": {
-                    "mac": "Adresse MAC Bluetooth",
-                    "name": "Nom"
-                },
-                "title": "Sélectionner une lumi?re Elkbledom."
-            },
-            "validate": {
-                "data": {
-                    "retry": "Réessayer de se connecter ?",
-                    "flicker": "La lumi?re ?-t-elle clignoté ?"
-                },
-                "title": "Valider la connexion"
-            },
-            "manual": {
-                "data": {
-                    "mac": "Adresse MAC Bluetooth",
-                    "name": "Nom"
-                },
-                "title": "Entrer une adresse MAC Bluetooth"
-            }
+  "config": {
+    "step": {
+      "user": {
+        "data": {
+          "mac": "Adresse MAC Bluetooth",
+          "name": "Nom"
         },
-        "error": {
-            "connect": "Echec de la connexion ? Elkbledom"
+        "title": "Sélectionner une lumière Lotus Lantern HACS."
+      },
+      "validate": {
+        "data": {
+          "retry": "Réessayer de se connecter ?",
+          "flicker": "La lumière ?-t-elle clignoté ?"
         },
-        "abort": {
-            "cannot_validate": "Echec de validation de la lumi?re Elkbledom",
-            "cannot_connect": "Echec de la connexion ? Elkbledom",
-            "not_supported": "La lumi?re ElkBledom n'est pas prise en charge",
-            "invalid_discovery_info": "Informations de d?couverte non valides sur le p?riph?rique Bluetooth"
-        }
+        "title": "Valider la connexion"
+      },
+      "manual": {
+        "data": {
+          "mac": "Adresse MAC Bluetooth",
+          "name": "Nom"
+        },
+        "title": "Entrer une adresse MAC Bluetooth"
+      }
     },
-    "options": {
-        "step": {
-            "user": {
-                "data": {
-                    "reset": "Réinitialiser la couleur ? l'allumage",
-                    "delay": "Temps d'attente pour la déconnexion en secondes(0 pour ne jamais se déconnecter)"
-                }
-            }
-        }
+    "error": {
+      "connect": "Echec de la connexion à Lotus Lantern HACS"
     },
-    "title": "Elkbledom"
+    "abort": {
+      "cannot_validate": "Echec de validation de la lumière Lotus Lantern HACS",
+      "cannot_connect": "Echec de la connexion à Lotus Lantern HACS",
+      "not_supported": "La lumière Lotus Lantern HACS n'est pas prise en charge",
+      "invalid_discovery_info": "Informations de d?couverte non valides sur le p?riph?rique Bluetooth"
+    }
+  },
+  "options": {
+    "step": {
+      "user": {
+        "data": {
+          "reset": "Réinitialiser la couleur ? l'allumage",
+          "delay": "Temps d'attente pour la déconnexion en secondes(0 pour ne jamais se déconnecter)"
+        }
+      }
+    }
+  },
+  "title": "Lotus Lantern HACS"
 }

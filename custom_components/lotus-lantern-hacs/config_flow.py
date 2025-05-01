@@ -1,6 +1,6 @@
 import asyncio
-from .elkbledom import BLEDOMInstance
-from .elkbledom import DeviceData
+from .lotus_lantern_hacs import BLEDOMInstance
+from .lotus_lantern_hacs import DeviceData
 from typing import Any
 
 from homeassistant import config_entries

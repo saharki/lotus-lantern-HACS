@@ -4,7 +4,7 @@ import logging
 import voluptuous as vol
 from typing import Any, Optional, Tuple
 
-from .elkbledom import BLEDOMInstance
+from .lotus_lantern_hacs import BLEDOMInstance
 from .const import DOMAIN, EFFECTS, EFFECTS_list
 
 from homeassistant.const import CONF_MAC
