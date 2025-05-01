@@ -1,6 +1,6 @@
 import asyncio
-from .lotus_lantern_hacs import BLEDOMInstance
-from .lotus_lantern_hacs import DeviceData
+from .lotuslantern import BLEDOMInstance
+from .lotuslantern import DeviceData
 from typing import Any
 
 from homeassistant import config_entries
@@ -22,7 +22,7 @@ DATA_SCHEMA = vol.Schema({("host"): str})
 
 MANUAL_MAC = "manual"
 
-class ConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
+class BLEDOMFlowHandler(config_entries.ConfigFlow, domain=DOMAIN):
     VERSION = 1
     CONNECTION_CLASS = config_entries.CONN_CLASS_LOCAL_POLL
 
@@ -196,7 +196,7 @@ class OptionsFlowHandler(config_entries.OptionsFlow):
 
     def __init__(self, config_entry):
         """Initialize options flow."""
-        self.config_entry = config_entry
+        #self.config_entry = config_entry
 
     async def async_step_init(self, _user_input=None):
         """Manage the options."""

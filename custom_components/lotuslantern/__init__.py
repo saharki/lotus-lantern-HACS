@@ -6,7 +6,7 @@ from homeassistant.const import CONF_MAC, EVENT_HOMEASSISTANT_STOP
 from homeassistant.const import Platform
 
 from .const import DOMAIN, CONF_RESET, CONF_DELAY
-from .lotus_lantern_hacs import BLEDOMInstance
+from .lotuslantern import BLEDOMInstance
 import logging
 
 LOGGER = logging.getLogger(__name__)
@@ -16,7 +16,7 @@ PLATFORMS: list[Platform] = [
 ]
 
 async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
-    """Set up Lotus Lantern HACS from a config entry."""
+    """Set up LotusLantern from a config entry."""
     reset = entry.options.get(CONF_RESET, None) or entry.data.get(CONF_RESET, None)
     delay = entry.options.get(CONF_DELAY, None) or entry.data.get(CONF_DELAY, None)
     mac = entry.options.get(CONF_MAC, None) or entry.data.get(CONF_MAC, None)

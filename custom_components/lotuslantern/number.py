@@ -5,7 +5,7 @@ from homeassistant.components.number import (
     NumberEntityDescription,
 )
 
-from .lotus_lantern_hacs import BLEDOMInstance
+from .lotuslantern import BLEDOMInstance
 from .const import DOMAIN
 
 from homeassistant.helpers.entity import DeviceInfo

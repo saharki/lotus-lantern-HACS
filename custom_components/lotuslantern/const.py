@@ -1,6 +1,6 @@
 from enum import Enum
 
-DOMAIN = "lotus lantern hacs"
+DOMAIN = "lotuslantern"
 CONF_RESET = "reset"
 CONF_DELAY = "delay"
 

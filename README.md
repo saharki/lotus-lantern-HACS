@@ -1,9 +1,19 @@
-# Lotus Lantern LED String HA Integration
+# lotuslantern HA Integration
+
+<a href="https://www.buymeacoffee.com/davecoderuiz" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
 
 [![hacs_badge](https://img.shields.io/badge/HACS-Default-41BDF5.svg)](https://github.com/hacs/integration)
 [![hacs_badge](https://img.shields.io/badge/HACS-Custom-41BDF5.svg)](https://github.com/hacs/integration)
 
 Home Assistant integration for LED STRIP or LED Desktop light (lightbar) NAME ELK BLEDOM with android/iphone mobile app duoCo Strip (https://play.google.com/store/apps/details?id=shy.smartled&hl=es&gl=US) or mobile app Lantern Lotus (https://play.google.com/store/apps/details?id=wl.smartled&hl=es&gl=US) or mobile app Lotus Lamp X (https://play.google.com/store/apps/details?id=com.szelk.ledlamppro).
+
+I buy it in amazon spain (https://www.amazon.es/gp/product/B00VFME0Q2)
+
+Or lightbar like this (https://www.amazon.es/bedee-Regulable-Inteligente-Bluetooth-Dormitorio/dp/B0BNPMGR1H)
+
+New support for MELK strip, you can buy it in amazon spain (https://www.amazon.es/distancia-Bluetooth-aplicaci%C3%B3n-sincronizaci%C3%B3n-habitaci%C3%B3n/dp/B09VC77GCZ) or search "B09VC77GCZ" in your amazon country shop. MELK device confirmed working: https://www.amazon.com/dp/B07R7NTX6D
+
+New support for ELK-LAMPL strip, works with Lotus Lamp X.
 
 ## Dependencies
 
@@ -59,7 +69,7 @@ If your strip show some uuid like "**0000fff3**-0000-1000-8000-00805f9b34fb" , y
 
 If your strip show some uuid like "**0000ffe1**-0000-1000-8000-00805f9b34fb" , your strip it is supported
 
-If your strip show some uuid like "**0000ff01**-0000-1000-8000-00805f9b34fb", go to your correct repository: https://github.com/saharki/lotus-lantern-HACS
+If your strip show some uuid like "**0000ff01**-0000-1000-8000-00805f9b34fb", go to your correct repository: https://github.com/raulgbcr/lednetwf_ble
 
 If your strip show some uuid like:
 
@@ -91,7 +101,7 @@ sudo gatttool -b be:59:7a:00:08:xx --char-write-req -a 0x0009 -n 7e0004000000ff0
 
 ### [HACS](https://hacs.xyz/) (recommended)
 
-Installation can be done through HACS , search "" and download it
+Installation can be done through HACS , search "lotuslantern" and download it
 
 ### Manual installation
 
@@ -99,7 +109,7 @@ You can manually clone this repository inside `config/custom_components/` HA fol
 
 ## Setup
 
-After installation, you should find lotus lantern hacs under the Settings -> Integrations -> Add integration -> search lotus lantern hacs integration -> follow instructions.
+After installation, you should find lotuslantern under the Settings -> Integrations -> Add integration -> search lotuslantern integration -> follow instructions.
 
 The setup step includes discovery which will list out all ELK BLEDOM lights discovered. The setup will validate connection by toggling the selected light. Make sure your light is in-sight to validate this.
 
@@ -107,7 +117,7 @@ The setup needs to be repeated for each light.
 
 ## Config
 
-After Setup, you can config two lotus lantern hacs params under Settings -> Integrations -> search lotus lantern hacs integration -> Config.
+After Setup, you can config two lotuslantern params under Settings -> Integrations -> search lotuslantern integration -> Config.
 
 #### Reset color when led turn on
 
@@ -149,7 +159,7 @@ In configuration.yaml:
 logger:
   default: info
   logs:
-    custom_components.lotus lantern hacs: debug
+    custom_components.lotuslantern: debug
 ```
 
 ## Examples
@@ -165,68 +175,3 @@ tap_action:
   action: toggle
 entity: light.tiraled
 ```
-
-Create button to set color:
-
-```
-show_name: true
-show_icon: true
-name: Red
-type: button
-tap_action:
-  action: call-service
-  service: light.turn_on
-  target:
-    entity_id: light.test
-  data:
-    rgb_color:
-      - 255
-      - 0
-      - 0
-    brightness: 255
-```
-
-## Known issues
-
-1.  Only one device can be connected over bluetooth to the led strip. If you are using the mobile app to connect to strip, or used `gatttool` to query the device, you need to disconnect from the LED strip first.
-    ```
-    BleakOutOfConnectionSlotsError: Failed to connect after 9 attempt(s): No backend with an available connection slot that can reach address
-    ```
-2.  Live state polling doesn't work.
-3.  It is possible you have interference between the LED strip and the TV remote control or another devices. When you press some buttons on the remote control, the status of the lights could be changes.
-4.  I am waiting for read status value:
-
-            ```
-
-            future = asyncio.get_event_loop().create_future()
-            await self._device.start_notify(self._read_uuid, create_status_callback(future))
-            # PROBLEMS WITH STATUS VALUE, I HAVE NOT VALUE TO WRITE AND GET STATUS
-            await self._write(bytearray([0xEF, 0x01, 0x77]))
-            await asyncio.wait_for(future, 5.0)
-            await self._device.stop_notify(self._read_uuid)
-
-            ```
-
-## Credits
-
-This integration will not be possible without the awesome work of this github repositories:
-
-https://www.home-assistant.io/integrations/led_ble/
-
-https://github.com/sysofwan/ha-triones
-
-https://github.com/TheSylex/ELK-BLEDOM-bluetooth-led-strip-controller/
-
-https://github.com/FreekBes/bledom_controller/
-
-https://github.com/FergusInLondon/ELK-BLEDOM/
-
-https://github.com/arduino12/ble_rgb_led_strip_controller
-
-https://github.com/lilgallon/DynamicLedStrips
-
-https://github.com/kquinsland/JACKYLED-BLE-RGB-LED-Strip-controller
-
-https://linuxthings.co.uk/blog/control-an-elk-bledom-bluetooth-led-strip
-
-https://github.com/dave-code-ruiz/lotus lantern hacs/tree/main

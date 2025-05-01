@@ -6,14 +6,14 @@
           "mac": "Direccion MAC Bluetooth",
           "name": "Nombre"
         },
-        "title": "Elige una Lotus Lantern HACS. Asegurate de que la luz esté lista y cerca para la validacion."
+        "title": "Elige una tira led. Asegurate de que la luz esté lista y cerca para la validacion."
       },
       "validate": {
         "data": {
           "retry": "?Intentar de nuevo la conexión?",
           "flicker": "?La luz vibra?"
         },
-        "title": "Validacion de la conexion Lotus Lantern HACS"
+        "title": "Validacion de la conexion"
       },
       "manual": {
         "data": {
@@ -24,12 +24,12 @@
       }
     },
     "error": {
-      "connect": "No se puede conectar con la Lotus Lantern HACS"
+      "connect": "No se puede conectar con la tira led"
     },
     "abort": {
-      "cannot_validate": "No se puede validar la conexión Lotus Lantern HACS",
-      "cannot_connect": "No se puede conectar con la Lotus Lantern HACS",
-      "not_supported": "Lotus Lantern HACS no soportada",
+      "cannot_validate": "No se puede validar la conexión",
+      "cannot_connect": "No se puede conectar con la tira led",
+      "not_supported": "Tira led no soportada",
       "invalid_discovery_info": "No se encuentra información de la tira led"
     }
   },
@@ -43,5 +43,5 @@
       }
     }
   },
-  "title": "Lotus Lantern HACS"
+  "title": "LotusLantern"
 }

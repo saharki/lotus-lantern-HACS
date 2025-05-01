@@ -6,14 +6,14 @@
           "mac": "Bluetooth MAC adresa",
           "name": "Názov"
         },
-        "title": "Vyberte si svetlo Lotus Lantern HACS. Skontrolujte, či je svetlo v dohľade na overenie."
+        "title": "Vyberte si svetlo LotusLantern. Skontrolujte, či je svetlo v dohľade na overenie."
       },
       "validate": {
         "data": {
           "retry": "Znova skúsiť overiť pripojenie?",
           "flicker": "Blikalo svetlo?"
         },
-        "title": "Overte pripojenie Lotus Lantern HACS"
+        "title": "Overte pripojenie LotusLantern"
       },
       "manual": {
         "data": {
@@ -24,12 +24,12 @@
       }
     },
     "error": {
-      "connect": "Nedá sa pripojiť k Lotus Lantern HACS"
+      "connect": "Nedá sa pripojiť k LotusLantern"
     },
     "abort": {
-      "cannot_validate": "Nie je možné overiť Lotus Lantern HACS light",
-      "cannot_connect": "Nedá sa pripojiť k Lotus Lantern HACS",
-      "not_supported": "Svetlo Lotus Lantern HACS nie je podporovane",
+      "cannot_validate": "Nie je možné overiť LotusLantern light",
+      "cannot_connect": "Nedá sa pripojiť k LotusLantern",
+      "not_supported": "Svetlo LotusLantern nie je podporovane",
       "invalid_discovery_info": "Neplatne informacie o objaveni v zariadeni bluetooth"
     }
   },
@@ -43,5 +43,5 @@
       }
     }
   },
-  "title": "Lotus Lantern HACS"
+  "title": "LotusLantern"
 }

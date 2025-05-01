@@ -6,14 +6,14 @@
           "mac": "Adres MAC Bluetooth",
           "name": "Nazwa"
         },
-        "title": "Wybierz światło Lotus Lantern HACS. Upewnij się, że masz je w zasięgu wzroku w celu weryfikacji."
+        "title": "Wybierz światło LotusLantern. Upewnij się, że masz je w zasięgu wzroku w celu weryfikacji."
       },
       "validate": {
         "data": {
           "retry": "Powtórzyć połączenie weryfikacyjne?",
           "flicker": "Czy światło migało?"
         },
-        "title": "Weryfikacja połączenia Lotus Lantern HACS"
+        "title": "Weryfikacja połączenia LotusLantern"
       },
       "manual": {
         "data": {
@@ -24,12 +24,12 @@
       }
     },
     "error": {
-      "connect": "Nie można nawiązać połącznenia do światła Lotus Lantern HACS"
+      "connect": "Nie można nawiązać połącznenia do światła LotusLantern"
     },
     "abort": {
-      "cannot_validate": "Nie można zweryfikować światła Lotus Lantern HACS",
-      "cannot_connect": "Nie można połączyć się ze światłem Lotus Lantern HACS",
-      "not_supported": "wiato Lotus Lantern HACS nie jest obsugiwane",
+      "cannot_validate": "Nie można zweryfikować światła LotusLantern",
+      "cannot_connect": "Nie można połączyć się ze światłem LotusLantern",
+      "not_supported": "wiato LotusLantern nie jest obsugiwane",
       "invalid_discovery_info": "Nieprawidowe informacje o odkryciu w urzdzeniu Bluetooth"
     }
   },
@@ -43,5 +43,5 @@
       }
     }
   },
-  "title": "Lotus Lantern HACS"
+  "title": "LotusLantern"
 }

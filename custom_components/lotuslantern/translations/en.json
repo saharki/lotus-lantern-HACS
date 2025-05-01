@@ -6,14 +6,14 @@
           "mac": "Bluetooth MAC address",
           "name": "Name"
         },
-        "title": "Pick a Lotus Lantern HACS light. Make sure light in sight for validation."
+        "title": "Pick a LotusLantern light. Make sure light in sight for validation."
       },
       "validate": {
         "data": {
           "retry": "Retry validate connection?",
           "flicker": "Did the light blink?"
         },
-        "title": "Validate Lotus Lantern HACS connection"
+        "title": "Validate LotusLantern connection"
       },
       "manual": {
         "data": {
@@ -24,12 +24,12 @@
       }
     },
     "error": {
-      "connect": "Unable to connect to Lotus Lantern HACS"
+      "connect": "Unable to connect to LotusLantern"
     },
     "abort": {
-      "cannot_validate": "Unable to validate Lotus Lantern HACS light",
-      "cannot_connect": "Unable to connect to Lotus Lantern HACS",
-      "not_supported": "Lotus Lantern HACS light not supported",
+      "cannot_validate": "Unable to validate LotusLantern light",
+      "cannot_connect": "Unable to connect to LotusLantern",
+      "not_supported": "LotusLantern light not supported",
       "invalid_discovery_info": "Invalid discovery info in bluetooth device"
     }
   },
@@ -43,5 +43,5 @@
       }
     }
   },
-  "title": "Lotus Lantern HACS"
+  "title": "LotusLantern"
 }

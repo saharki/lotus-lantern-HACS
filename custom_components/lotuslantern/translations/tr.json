@@ -6,14 +6,14 @@
           "mac": "Bluetooth MAC adresi",
           "name": "Adı"
         },
-        "title": "Lotus Lantern HACS ışığı seç. Doğrulama için ışığın görünür olmasını sağla."
+        "title": "LotusLantern ışığı seç. Doğrulama için ışığın görünür olmasını sağla."
       },
       "validate": {
         "data": {
           "retry": "Bağlantıyı doğrulamayı yeniden denemek istiyor musun?",
           "flicker": "Işık yanıp söndü mü?"
         },
-        "title": "Lotus Lantern HACS bağlantısını doğrula"
+        "title": "LotusLantern bağlantısını doğrula"
       },
       "manual": {
         "data": {
@@ -24,12 +24,12 @@
       }
     },
     "error": {
-      "connect": "Lotus Lantern HACS'a bağlanılamıyor"
+      "connect": "LotusLantern'a bağlanılamıyor"
     },
     "abort": {
-      "cannot_validate": "Lotus Lantern HACS ışığı doğrulanamıyor",
-      "cannot_connect": "Lotus Lantern HACS'a bağlanılamıyor",
-      "not_supported": "Lotus Lantern HACS ???? desteklenmiyor",
+      "cannot_validate": "LotusLantern ışığı doğrulanamıyor",
+      "cannot_connect": "LotusLantern'a bağlanılamıyor",
+      "not_supported": "LotusLantern ???? desteklenmiyor",
       "invalid_discovery_info": "Bluetooth aygtnda geersiz keif bilgisi"
     }
   },
@@ -43,5 +43,5 @@
       }
     }
   },
-  "title": "Lotus Lantern HACS"
+  "title": "LotusLantern"
 }
